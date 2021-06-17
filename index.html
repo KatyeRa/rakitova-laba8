@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<svg class="topthing" viewbox='0 0 3000 400'>
+        <use id="home-search-use" href='#home'></use>
+    </svg>
+
+
+	<svg class="burger" id="burger" width="100" height="100" viewbox="0 0 300 300">
+		<g stroke="#222" stroke-width="15" id="burgerSvg">
+			<circle cx="150" cy="150" r="130" fill="transparent" />
+
+			<line id="line1" class="burger-line" x1="70" x2="230" y1="100" y2="100" stroke=#CCFFFF />
+			<line id="line2" class="burger-line" x1="70" x2="230" y1="150" y2="150" stroke=#CCFFFF />
+			<line id="line3" class="burger-line" x1="70" x2="230" y1="200" y2="200" stroke=#CCFFFF />
+		</g>
+	</svg>
+
+	<svg class="close" width="100" height="100" viewbox="0 0 300 300">
+		<g stroke="#222" stroke-width="15" id="closeSvg">
+			<circle cx="150" cy="150" r="130" fill="transparent" />
+
+			<line x1="80" x2="220" y1="80" y2="220" stroke=#9966FF />
+			<line x1="80" x2="220" y1="220" y2="80" stroke=#9966FF />
+		</g>
+	</svg>
+
+	<svg class="search" width="100" height="100" viewbox="0 0 300 300">
+		<g stroke="#222" stroke-width="15" id="searchSvg">
+			<circle cx="110" cy="110" r="90" fill="transparent"  />
+			<line x1="175" x2="280" y1="175" y2="280" />
+		</g>
+	</svg>
+
+	<svg class="house" width="100" height="100" viewbox="-20 -20 340 220">
+		<g id="houseSvg" stroke="#222" stroke-width="15">
+            <polyline points="0 100, 100 0, 200 100, 150 100, 150 200, 130 200, 130 140, 100 140, 100 200, 50 200, 50 100, 0 100, 100 0  "  fill="#222"|>
+		</g>
+	</svg>
+
+	<svg class="time"
+        viewbox = "0 0 100 100"
+        width = "100"
+        height = "100">
+        <circle cx='50' cy='50' r='45' fill='white' stroke-width='4' stroke='rgb(0,0,0)'></circle>
+        <line x1='50' x2='50' y1='90' y2='80' stroke-width='4' stroke='black'></line>
+        <line x1='50' x2='50' y1='10' y2='20' stroke-width='4' stroke='black'></line>
+        <line x1='90' x2='80' y1='50' y2='50' stroke-width='4' stroke='black'></line>
+        <line x1='20' x2='10' y1='50' y2='50' stroke-width='4' stroke='black'></line>
+        <line id="hrs" x1='50' x2='80' y1='50' y2='50' stroke-width='6' stroke='red' stroke-linecap='round'></line>
+        <line id="mnts" x1='50' x2='90' y1='50' y2='50' stroke-width='6' stroke='red' stroke-linecap='round'></line>
+    </svg>
+
+	<svg>
+		<symbol stroke="#222" stroke-width="5" id="home">
+
+			<polygon points="20 140, 150 20, 300 140, 250 140, 250 300, 210 300, 210 210, 150 210, 150 300, 50 300, 50 140" fill="transparent" />
+
+			<circle cx="610" cy="130" r="90" fill="transparent"  />
+			<line x1="675" x2="780" y1="195" y2="300"/>
+		</symbol>
+	</svg>
+
+	<br>
+
+	<svg
+	viewbox = "0 0 100 100"
+	width = "100"
+	height = "100">
+	<rect  x='30' y='80' width='40' height='10' fill='white' stroke='black' stroke-width='5'></rect>
+	<path id="lamp"
+		d='M 30 80 L 30 69 C -16 -16 119 -12 70 69 L 70 80
+		
+		'
+		stroke='black'
+		stroke-width='5'
+		fill='white'
+
+	>
+	</path>
+	</svg>
+	<br>
+	<button class="switch" id="switch">switch</button>
+
+	<svg class="sun"
+	viewbox = "0 0 100 100"
+	width = "100"
+	height = "100">
+		<circle class="sunbase" cx='50' cy='50' r='27' fill='orange' stroke='#fffb00' stroke-width='3'></circle>
+		<use id="beams1" href='#beam'></use>
+		<use id="beams2" href='#beam'></use>
+		<use id="beams3" href='#beam'></use>
+		<use id="beams4" href='#beam'></use>
+	</svg>
+<svg style="display: none;" viewbox = "0 0 100 100"
+	width = "100"
+	height = "100">
+	<symbol id="beam" viewbox = "0 0 100 100"
+	width = "100"
+	height = "100">
+		<polygon points='40,25 50,10 60,25' stroke='brown' fill='#fffb00'></polygon>
+		<polygon points='40,75 50,90 60,75' stroke='brown' fill='#fffb00'></polygon>
+	</symbol>
+</svg>
+	<script src="script.js"></script>
+</body>
+</html>

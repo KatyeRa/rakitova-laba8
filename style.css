@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.burger{
+    cursor: pointer;
+}
+
+.burger:hover line{
+    stroke: #9966FF;
+    transition: 0.3s;
+}
+
+.burger:hover circle{
+    stroke: #6600CC;
+    transition: 0.3s;
+}
+
+.close:hover line{
+    stroke: #FF0000;
+    transition: 0.3s;
+}
+
+.close:hover circle{
+    stroke: #FFFFFF;
+    transition: 0.3s;
+}
+
+.search:hover circle{
+    stroke: #0000FF;
+    transition: 0.3s;
+}
+
+.house:hover polyline{
+    stroke: #ff00ff;
+    transition: 0.3s;
+}
+
+#line1,
+#line2,
+#line3 {
+    transition: all 0.5s;
+}
+.line1-animate {
+    transform:  translate(-20px, 200px) rotate(-45deg);
+}
+.line2-animate {
+    opacity: 0;
+}
+.line3-animate {
+    transform: translate(180px, -83px) rotate(45deg);
+}
+
+#hrs {
+    position: absolute;
+    transform-origin: 50px 50px;
+    animation: time infinite linear 17s;
+}
+#mnts {
+    position: absolute;
+    transform-origin: 50px 50px;
+    animation: time infinite linear 4s;
+}
+
+@keyframes time {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(360deg);
+    }
+}
+
+.switch{
+    margin:30px;
+
+    padding: 20px;
+    background-color: #9966FF;
+    font-size: 15px;
+
+    border-radius: 10px;
+
+    border: 0px;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+path {
+    transition: all 0.5s;
+}
+.light {
+    fill: yellow;
+}
+
+.sunbase {
+    position: relative;
+    z-index: 2;
+}
+
+#beam {
+    position: relative;
+}
+#beams2 {
+    position: absolute;
+    transform-origin: 50px 50px;
+    transform: rotate(45deg);
+}
+#beams3 {
+    position: absolute;
+    transform-origin: 50px 50px;
+    transform: rotate(90deg);
+}
+#beams4 {
+    position: absolute;
+    transform-origin: 50px 50px;
+    transform: rotate(135deg);
+}
+
+.home:hover {
+    color: blue;
+    fill: currentColor;
+  }
+  #home-search-use:hover {
+    color: pink;
+  }
